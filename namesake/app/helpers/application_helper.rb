@@ -12,8 +12,9 @@ module ApplicationHelper
   end
 
   def markdown(text)
-    rnder = RedcarpetPrettify.new(:hard_wrap => true)
-    mkdwn = Redcarpet::Markdown.new(rnder, :no_intra_emphasis => true, :fenced_code_blocks => true, :space_after_headers => true)
+    #rnder = RedcarpetPrettify.new(:hard_wrap => true)
+    #mkdwn = Redcarpet::Markdown.new(rnder, :no_intra_emphasis => true, :fenced_code_blocks => true, :space_after_headers => true)
+    mkdwn = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :no_intra_emphasis => true, :fenced_code_blocks => true, :space_after_headers => true)
     mkdwn.render(text).html_safe
   end
 end

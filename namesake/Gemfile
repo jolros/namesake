@@ -26,10 +26,13 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'friendly_id'
-gem 'redcarpet'
 gem 'devise'
 gem 'activeadmin'
 gem 'google-code-prettify-rails'
+
+#gem 'redcarpet'
+#gem 'redcarpet', :git => 'https://github.com/jolros/prettyredcarpet'
+gem 'redcarpet', :git => 'git://github.com/jolros/prettyredcarpet.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
